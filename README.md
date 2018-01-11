@@ -4,7 +4,7 @@
 Customize Leaflet maps with a linked Google Sheets template and GeoJSON data on GitHub
 
 ## Live links (replace with your own)
-- Leaflet Map https://franktoughmap.github.io/leaflet-maps-with-google-sheets/
+- Leaflet Map https://franktoughmap.github.io/map
 - Google Sheets https://docs.google.com/spreadsheets/d/1yjRu24h0sTpcNMuJhMCXh7bcISPUw5-MJpoq4shgNpc/edit#gid=0
 
 ## Create your own
