@@ -68,17 +68,8 @@
       zoomControl: false,
       scrollWheelZoom: true
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
-  </script>
-
-  <script type="text/javascript" src="google-doc-url.js"></script>
-  <script type="text/javascript" src="scripts/constants.js"></script>
-  <script type="text/javascript" src="scripts/palette.js"></script>
-  <script type="text/javascript" src="scripts/polylabel.js"></script>
-  <script type="text/javascript" src="scripts/procsv.js"></script>
-  <script type="text/javascript" src="scripts/map.js"></script>
-  
-  <script>
-    /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
+    
+        /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
    var customLayer = L.geoJson(null, {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(feature.properties.Title);
@@ -89,6 +80,15 @@
     map.fitBounds(runLayer.getBounds());
    }).addTo(map);
    controlLayers.addOverlay(customLayer, 'Markers from data.csv');
+    
   </script>
+
+  <script type="text/javascript" src="google-doc-url.js"></script>
+  <script type="text/javascript" src="scripts/constants.js"></script>
+  <script type="text/javascript" src="scripts/palette.js"></script>
+  <script type="text/javascript" src="scripts/polylabel.js"></script>
+  <script type="text/javascript" src="scripts/procsv.js"></script>
+  <script type="text/javascript" src="scripts/map.js"></script>
+  
 </body>
 </html>
