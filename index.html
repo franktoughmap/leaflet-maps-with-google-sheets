@@ -69,8 +69,8 @@
       scrollWheelZoom: true
     }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points
     
-        /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
-   var customLayer = L.geoJson(null, {
+   /* Upload Latitude/Longitude markers from data.csv file, show Title in pop-up, and override initial center and zoom to fit all in map */
+   var customLayer = L.map('map', {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(feature.properties.Title);
     }
