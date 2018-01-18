@@ -471,8 +471,8 @@ $(window).on('load', function() {
       to = allDivisors[p][z][i+1];
 
       color = getColor(from);
-      from = from ? comma(from) : from;
-      to = to ? comma(to) : to;
+      from = from ? from : from;
+      to = to ? to : to;
 
       labels.push(
         '<i style="background:' + color + '; opacity: '
