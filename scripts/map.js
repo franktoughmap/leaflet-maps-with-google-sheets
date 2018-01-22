@@ -545,6 +545,14 @@ $(window).on('load', function() {
   function onEachFeature(feature, layer) {
     // Do not bind popups if 1. no popup properties specified and 2. display
     // images is turned off.
+    
+    // hover
+    layer.on({
+    mouseover: highlightFeature,
+    mouseout: resetHighlight
+     });
+    
+    
     if (getPolygonSetting(polygon, '_popupProp') == ''
      && getPolygonSetting(polygon, '_polygonDisplayImages') == 'off') return;
 
@@ -1023,11 +1031,11 @@ function resetHighlight(e) {
 }
   
 // This instructs highlight and reset functions on hover movement
-function onEachFeature(feature, layer) {
-  layer.on({
-    mouseover: highlightFeature,
-    mouseout: resetHighlight
-  });
-}
+//function onEachFeature(feature, layer) {
+//  layer.on({
+//    mouseover: highlightFeature,
+//    mouseout: resetHighlight
+//  });
+//}
   
 });
