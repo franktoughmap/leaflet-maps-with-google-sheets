@@ -1011,13 +1011,13 @@ function highlightFeature(e) {
     color: 'black',
     fillOpacity: 0.7
   });
-  info.update(layer.feature.properties);
+  //info.update(layer.feature.properties);
 }
 
 // This resets the highlight after hover moves away
 function resetHighlight(e) {
   geoJsonLayer.setStyle(style);
-  info.update();
+  //info.update();
 }
 
 // This instructs highlight and reset functions on hover movement
