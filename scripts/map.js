@@ -1002,6 +1002,19 @@ $(window).on('load', function() {
       return val;
   }
 
+  
+  
+  // Edit the getColor property to match data column header in your GeoJson file
+function style(feature) {
+  return {
+    //fillColor: getColor(feature.properties.density2010),
+    weight: 1,
+    opacity: 1,
+    color: 'black',
+    fillOpacity: 0.7
+  };
+}
+  
   // This highlights the layer on hover, also for mobile
 function highlightFeature(e) {
   resetHighlight(e);
