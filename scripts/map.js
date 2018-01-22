@@ -1008,16 +1008,24 @@ $(window).on('load', function() {
 function highlightFeature(e) {
   var layer = e.target;
   layer.setStyle({
-    weight: 4,
-    color: 'black',
-    fillOpacity: 0.7
+    weight: 3,
+    fillOpacity: 0.9
   });
+}
+
+// This resets the highlight after hover moves away
+function resetHighlight(e) {
+  var layer = e.target;
+  layer.setStyle({
+    weight: 1,
+    fillOpacity: 0.7
 }
   
 // This instructs highlight and reset functions on hover movement
 function onEachFeature(feature, layer) {
   layer.on({
     mouseover: highlightFeature,
+    mouseout: resetHighlight
   });
 }
   
