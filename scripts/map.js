@@ -1019,6 +1019,7 @@ function resetHighlight(e) {
   layer.setStyle({
     weight: 1,
     fillOpacity: 0.7
+  });
 }
   
 // This instructs highlight and reset functions on hover movement
