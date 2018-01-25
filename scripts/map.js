@@ -353,6 +353,7 @@ $(window).on('load', function() {
       }
 
       // For each set of divisors, decide whether textual or numerical
+      // Ez a funkció most ki van kapcsolva!
       for (i = 0; i < divisors.length; i++) {
         if (!isNaN(parseFloat(divisors[i][0].trim()))) {
           isNumerical[i] = false; // új
