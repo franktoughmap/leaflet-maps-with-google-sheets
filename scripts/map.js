@@ -356,11 +356,11 @@ $(window).on('load', function() {
       // Ez a funkció most ki van kapcsolva!
       for (i = 0; i < divisors.length; i++) {
         if (!isNaN(parseFloat(divisors[i][0].trim()))) {
-          isNumerical[i] = false; // új
-          //isNumerical[i] = true;
-          //for (j = 0; j < divisors[i].length; j++) {
-          //  divisors[i][j] = parseFloat(divisors[i][j].trim());
-          //}
+          //isNumerical[i] = false; // új
+          isNumerical[i] = true;
+          for (j = 0; j < divisors[i].length; j++) {
+            divisors[i][j] = parseFloat(divisors[i][j].trim());
+          }
         } else {
           isNumerical[i] = false;
         }
